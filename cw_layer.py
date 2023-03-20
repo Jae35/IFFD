@@ -160,6 +160,6 @@ class XceptionBN(nn.Module):
 
 if __name__ == '__main__':
     model = XceptionBN()
-    model.load_state_dict(torch.load('./checkpoints/xception-9-best.pth'))
+    model.load_state_dict(torch.load('./checkpoints/xception-best.pth'))
     model.eval()
     print(model.model)
